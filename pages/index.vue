@@ -19,7 +19,11 @@
         </div>
 
         <img class="absolute lg:top-xl md:top-lg md:block hidden" src="/circle1.png" alt="Circle Pattern">
-        <!-- Second Section -->
+
+
+        <!-- Services Section -->
+
+
         <section class="bg-blue grid grid-flow auto-rows-max">
             <div class="flex justify-center py-24" >
                 <img src="../assets/Icons/WWD.png" alt="What We Do" >
@@ -36,7 +40,11 @@
                 </div>
             </div>
         </section>
-        <!-- 3rd Section -->
+
+
+        <!-- Tech Section -->
+        
+
         <section class="grid grid-flow-row grid-rows-1 auto-rows-min md:px-20 px-4 py-24 bg-darkBlue">
             <div class="row-start-1 grid grid-flow-row auto-rows-min grid-cols-8">
                 <h2 class="lg:col-span-3 col-span-full text-white font-OpenSans text-3xl font-bold">Leveraging the best <br> technologies for the job.</h2>
@@ -80,6 +88,21 @@
                 </div>
             </div>
         </section>
+        
+
+        <!-- Recent Work -->
+
+
+        <section class="bg-white md:px-20 px-4">
+            <div class="flex justify-center py-24" >
+                <img src="/RW.png" alt="Recent Work" >
+            </div>
+            <div class="grid grid-cols-4 py-">
+                <div class="col-start-2 col-span-2">
+                    <LargePortfolio image="/d2c.jpg" title="Testing" type="Website" link="/"/>
+                </div>
+            </div>
+        </section>
     </div>
 </template>
 
@@ -95,10 +118,6 @@ export default class index extends Vue {
         }
     }
 
-    callAlert(event: any) {
-        console.log(event.clientX, event.clientY);
-    }
-    
     callRef(): void {
         //@ts-ignore
         this.$refs.phoneRef.changePhonePos(event.clientX, event.clientY);

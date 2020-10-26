@@ -13,6 +13,7 @@ module.exports = {
                 xl: '430px',
             },
             height: {
+                portImg: '300px',
                 wwd: '425px',
                 wwdHover: '450px',
             },
