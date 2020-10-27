@@ -1,11 +1,11 @@
 <template>
     <div class="bg-white grid grid-cols-4 shadow-2xl">
         <!-- Image -->
-        <div class="col-span-2 h-portImg overflow-hidden bg-darkBlue">
+        <div class="col-span-2 h-portImg md:block hidden overflow-hidden bg-darkBlue">
             <img class="" :src="image" alt="Large portfolio image" >
         </div>
         <!-- Right Side -->
-        <div class="col-span-2 flex items-center">
+        <div class="col-span-full md:col-span-2 bg-d2c md:bg-none flex items-center">
             <div class="px-16">
                 <h3 class="font-OpenSans font-bold text-orange text-4xl block mt-16">{{title}}</h3>
                 <p class="font-Nunito font-bold text-blue text-xl block mt-4">{{type}}</p>

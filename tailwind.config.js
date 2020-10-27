@@ -8,6 +8,9 @@ module.exports = {
             'OpenSans': ['"Open Sans"', 'sans-serif']
         },
         extend: {
+            backgroundImage:{
+                'd2c':"url('/d2c.jpg')",
+            },
             inset: {
                 lg: '130px',
                 xl: '430px',
@@ -33,7 +36,8 @@ module.exports = {
    },
     variants: {
         height: ['hover'],
-        width: ['hover']
+        width: ['hover'],
+        backgroundImage: ({ before }) => before(['active']),
     },
    plugins: [],
    purge: {

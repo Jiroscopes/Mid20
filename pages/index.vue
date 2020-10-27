@@ -93,12 +93,12 @@
         <!-- Recent Work -->
 
 
-        <section class="bg-white md:px-20 px-4">
+        <section class="bg-white md:px-20 py-24 px-4">
             <div class="flex justify-center py-24" >
                 <img src="/RW.png" alt="Recent Work" >
             </div>
-            <div class="grid grid-cols-4 py-">
-                <div class="col-start-2 col-span-2">
+            <div class="grid xl:grid-cols-6">
+                <div class="xl:col-start-2 xl:col-span-4">
                     <LargePortfolio image="/d2c.jpg" title="Testing" type="Website" link="/"/>
                 </div>
             </div>
