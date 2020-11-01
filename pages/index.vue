@@ -90,19 +90,42 @@
         </section>
         
 
-        <!-- Recent Work -->
+        <img class="absolute right-0 xl:top-circleLines hidden xl:block hidden" src="/lines_1.png" alt="Circle Pattern">
 
+        <!-- Recent Work -->
+        
 
         <section class="bg-white md:px-20 py-24 px-4">
             <div class="flex justify-center py-24" >
                 <img src="/RW.png" alt="Recent Work" >
             </div>
-            <div class="grid xl:grid-cols-6">
-                <div class="xl:col-start-2 xl:col-span-4">
-                    <LargePortfolio image="/d2c.jpg" title="Testing" type="Website" link="/"/>
+            <div class="grid grid-cols-6 gap-4 md:grid-rows-2 grid-rows-3">
+                <div class="xl:col-start-2 col-span-full xl:col-span-4 row-start-1">
+                    <LargePortfolio image="" title="Testing" type="Website" link="/"/>
+                </div>
+                <div class="row-start-2 xl:col-span-2 xl:col-start-2 col-span-full col-start-1 md:col-span-3">
+                    <SmallPortfolio title="Testing Small titles" type="Website" link="/" />
+                </div>
+                <div class="md:row-start-2 row-start-3 xl:col-span-2 xl:col-start-4 col-span-full col-start-1 md:col-span-3">
+                    <SmallPortfolio title="Testing Small" type="Website" link="/" />
                 </div>
             </div>
         </section>
+
+        <img class="absolute h-circleMD lg:h-full xl:top-circle2XL lg:top-circle2LG md:top-circle2MD md:block hidden" src="/circle2.png" alt="Circle Pattern">
+
+        <!-- Contact Section -->
+
+        <section class="grid grid-flow-row grid-rows-1 auto-rows-min md:px-20 px-4 py-24 bg-blue">
+            <div class="row-start-1 grid grid-flow-row auto-rows-min grid-cols-8">
+                <h2 class="lg:col-span-3 col-span-full text-white font-OpenSans text-3xl font-bold">Want to work together? <br> Let us know how we can help!</h2>
+                <span class="row-start-2 md:col-span-3 col-span-full bg-orange block h-1 my-4"></span>
+            </div>
+            <div>
+                <CustomForm />
+            </div>
+        </section>
+
     </div>
 </template>
 
