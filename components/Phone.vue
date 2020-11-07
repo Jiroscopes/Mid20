@@ -1,7 +1,7 @@
 <template>
     <div class="lg:block sm:hidden relative">
-        <img v-bind:style="{left: mousePos[0] + 'px', top: mousePos[1] + 'px'}" class="absolute z-10" src="../assets/floating-phone-icons.png" alt="">
-        <img ref="phoneIMG" class="absolute z-0" src="../assets/phone.png" alt="">
+        <img v-bind:style="{left: mousePos[0] + 'px', top: mousePos[1] + 'px'}" class="absolute z-10" src="/floating-phone-icons.png" alt="">
+        <img ref="phoneIMG" class="absolute z-0" src="/phone.png" alt="">
     </div> 
 </template>
 

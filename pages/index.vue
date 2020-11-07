@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="home">
         <Navbar />
         <div @mousemove="callRef" class="bg-white grid grid-flow-row auto-rows-max">
             <div class="grid grid-cols-3">
@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="flex justify-center pb-8">
-               <a href="#NextPage"><ScrollIcon /></a>
+               <a href="#wwd"><ScrollIcon /></a>
             </div>
         </div>
 
@@ -24,9 +24,9 @@
         <!-- Services Section -->
 
 
-        <section class="bg-blue grid grid-flow auto-rows-max">
+        <section id="wwd" class="bg-blue grid grid-flow auto-rows-max">
             <div class="flex justify-center py-24" >
-                <img src="../assets/Icons/WWD.png" alt="What We Do" >
+                <img src="/icons/WWD.png" alt="What We Do" >
             </div>
             <div class="grid xl:grid-cols-8 lg:gap-6 xl:gap-0 lg:grid-cols-2 grid-cols-10 sm:px-20 px-4 pb-24">
                 <div class="xl:col-start-1 xl:col-end-3 lg:col-span-2 col-span-10 py-8 lg:py-0">
@@ -95,7 +95,7 @@
         <!-- Recent Work -->
         
 
-        <section class="bg-white md:px-20 py-24 px-4">
+        <section id="recentWork" class="bg-white md:px-20 py-24 px-4">
             <div class="flex justify-center py-24" >
                 <img src="/RW.png" alt="Recent Work" >
             </div>
@@ -116,16 +116,17 @@
 
         <!-- Contact Section -->
 
-        <section class="grid grid-flow-row grid-rows-1 auto-rows-min md:px-20 px-4 py-24 bg-blue">
+        <section id="contact" class="relative grid grid-flow-row grid-rows-1 auto-rows-min md:px-20 px-4 py-24 bg-blue">
             <div class="row-start-1 grid grid-flow-row auto-rows-min grid-cols-8">
                 <h2 class="lg:col-span-3 col-span-full text-white font-OpenSans text-3xl font-bold">Want to work together? <br> Let us know how we can help!</h2>
                 <span class="row-start-2 md:col-span-3 col-span-full bg-orange block h-1 my-4"></span>
             </div>
-            <div>
+            <div class="flex justify-center py-24 z-10">
                 <CustomForm />
             </div>
+            <p class="absolute bottom-0 left-0 text-white font-Nunito p-3 z-10">	&#169; Mid-Twenty LLC 2020</p>
+            <img class="absolute md:block bottom-0 right-0" src="/morecircles.png" alt="Bottom Circles">
         </section>
-
     </div>
 </template>
 

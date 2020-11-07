@@ -1,6 +1,6 @@
 <template>
     <div>
-        <img class="lg:block hidden h-16 w-16 bounce relative" src="../assets/scroll_icon.png" alt="Scroll Icon" >
+        <img class="lg:block hidden h-16 w-16 bounce relative" src="/scroll_icon.png" alt="Scroll Icon" >
     </div>
 </template>
 
