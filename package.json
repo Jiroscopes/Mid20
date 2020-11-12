@@ -8,7 +8,7 @@
     "start:lambda": "netlify-lambda serve ./functions --port 9090",
     "build": "run-p build:**",
     "build:app": "nuxt-ts build",
-    "build:lambda": "netlify-lambda build ./functions && go get ./functions/... && go build -o ./functions-build/hello ./functions/hello.go",
+    "build:lambda": "netlify-lambda build functions && go get ./functions/... && go build -o functions/hello ./functions/hello.go",
     "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "dev": "nuxt-ts",
