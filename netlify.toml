@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
   functions = "functions"
-
+  publish = "dist"
 [build.enviroment]
   GO_VERSION = "1.15.3"
