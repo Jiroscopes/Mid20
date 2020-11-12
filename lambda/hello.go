@@ -19,12 +19,14 @@ func send(body string) {
 	pass := EmailPass
 	to := "steven@midtwenty.com"
 
+	log.Println(EmailPass)
+
 	msg := "From: " + from + "\n" +
 		"To: " + to + "\n" +
 		"Subject: Hello there\n\n" +
 		body
 
-	err := smtp.SendMail("smtp.gmail.com:587",
+	err := smtp.SendMail("smtp.gmail.com:465",
 		smtp.PlainAuth("", from, pass, "smtp.gmail.com"),
 		from, []string{to}, []byte(msg))
 
