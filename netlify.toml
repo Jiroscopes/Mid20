@@ -1,6 +1,8 @@
 [build]
-  command = "npm run build"
-  functions = "./functions"
-  publish = "dist"
+  base = "/"
+  command = "make build"
+  publish = "/dist"
+  functions = "/functions"
+
 [build.enviroment]
   GO_VERSION = "1.15.3"
