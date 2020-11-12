@@ -8,7 +8,6 @@ import (
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
-	"github.com/joho/godotenv"
 )
 
 // EmailPass stored in env var
@@ -56,12 +55,7 @@ func Handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 // Init is ran before main()
 func init() {
 	//loads values from .env
-	if err := godotenv.Load(); err != nil {
-		log.Print("No .env file found!")
-	}
-
 	EmailPass, _ = os.LookupEnv("EMAILPASS")
-
 }
 
 func main() {
