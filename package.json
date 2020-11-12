@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
+    "build:lambda": "netlify-lambda build /functions && go get ./functions/... && go build -o functions/hello ./functions/hello.go",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
