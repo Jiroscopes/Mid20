@@ -25,7 +25,7 @@ func send(body string) {
 		"Subject: Hello there\n\n" +
 		body
 
-	err := smtp.SendMail("smtp.gmail.com:465",
+	err := smtp.SendMail("smtp.gmail.com:587",
 		smtp.PlainAuth("", from, pass, "smtp.gmail.com"),
 		from, []string{to}, []byte(msg))
 
