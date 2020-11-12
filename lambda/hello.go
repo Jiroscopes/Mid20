@@ -2,12 +2,45 @@ package main
 
 import (
 	"fmt"
+	"log"
+	"net/smtp"
+	"os"
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
+	"github.com/joho/godotenv"
 )
 
+// EmailPass stored in env var
+var EmailPass string
+
+func send(body string) {
+	from := "form@midtwenty.com"
+	pass := EmailPass
+	to := "steven@midtwenty.com"
+
+	msg := "From: " + from + "\n" +
+		"To: " + to + "\n" +
+		"Subject: Hello there\n\n" +
+		body
+
+	err := smtp.SendMail("smtp.gmail.com:587",
+		smtp.PlainAuth("", from, pass, "smtp.gmail.com"),
+		from, []string{to}, []byte(msg))
+
+	if err != nil {
+		log.Printf("smtp error: %s", err)
+		return
+	}
+
+	log.Print("sent")
+}
+
+// Handler takes care of incoming requests
 func Handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
+
+	send("Testing email!")
+
 	name := request.QueryStringParameters["name"]
 	response := fmt.Sprintf("Hello %s!", name)
 
@@ -16,6 +49,17 @@ func Handler(request events.APIGatewayProxyRequest) (*events.APIGatewayProxyResp
 		Headers:    map[string]string{"Content-Type": "text/html; charset=UTF-8"},
 		Body:       response,
 	}, nil
+}
+
+// Init is ran before main()
+func init() {
+	//loads values from .env
+	if err := godotenv.Load(); err != nil {
+		log.Print("No .env file found!")
+	}
+
+	EmailPass, _ = os.LookupEnv("EMAILPASS")
+
 }
 
 func main() {
