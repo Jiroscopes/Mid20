@@ -15,7 +15,7 @@ import (
 var EmailPass string
 
 func send(body string) {
-	from := "form@midtwenty.com"
+	from := "steven@midtwenty.com"
 	pass := EmailPass
 	to := "steven@midtwenty.com"
 
