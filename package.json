@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "start": "run-p start:**",
+    "build": "run-p build:**",
     "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
-    "build:lambda": "netlify-lambda build /functions && go get ./functions/... && go build -o functions/hello ./functions/hello.go",
-    "start": "nuxt-ts start",
+    "build:app": "nuxt-ts build",
+    "build:lambda": "netlify-lambda build functions && go get ./functions/... && go build -o functions/hello ./functions/hello.go",
+    "start:app": "nuxt-ts start",
     "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "npm run lint:js"
