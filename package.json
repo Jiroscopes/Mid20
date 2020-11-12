@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "nuxt-ts start",
-    "build": "nuxt-ts build",
+    "build": "nuxt-ts generate",
     "generate": "nuxt-ts generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "dev": "nuxt-ts",
