@@ -92,7 +92,7 @@ export default class Form extends Vue {
         });
 
         // Now we can send 
-        fetch('', {
+        fetch(this.apiURL, {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',
