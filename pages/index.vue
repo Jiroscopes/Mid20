@@ -50,7 +50,7 @@
                 <h2 class="lg:col-span-3 col-span-full text-white font-OpenSans text-3xl font-bold">Leveraging the best <br> technologies for the job.</h2>
                 <span class="row-start-2 md:col-span-3 col-span-full bg-orange block h-1 my-4"></span>
             </div>
-            <div class="row-start-2">
+            <div class="relative z-20 row-start-2">
                 <h3 class="text-white text-xl font-OpenSans font-semibold">Languages:</h3>
                 <div class="grid grid-flow-row xl:grid-cols-7 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-8 gap-0" >
                     <div class="col-span-1 my-4 md:px-4">
@@ -70,7 +70,7 @@
                     </div> 
                 </div>
             </div>
-            <div class="row-start-3">
+            <div class="relative z-20 row-start-3">
                 <h3 class="text-white text-xl font-OpenSans font-semibold">Frameworks:</h3>
                 <div class="grid grid-flow-row xl:grid-cols-7 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-8 gap-0" >
                     <div class="col-span-1 my-4 md:px-4">

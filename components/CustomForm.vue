@@ -26,11 +26,11 @@
                 <textarea v-model="comments" required class="p-4 h-48 rounded-md w-full font-Nunito block text-white bg-darkBlue" type="text" name="comments"></textarea>
             </div>
         </div>
-        <div class="row-start-4 my-6 flex justify-center">
+        <div class="row-start-4 my-6 flex justify-center text-center">
             <div>
+                <span v-if="success" class="text-white text-center text-bold font-OpenSans text-3xl py-8">Message Sent. Thank You!</span>
                 <p class="text-center text-white font-Nunito py-4">* Required</p>
-                <button class="block font-Nunito font-bold bg-orange sm:bg-transparent text-white sm:text-orange border-2 border-solid border-orange px-16 py-2 rounded-3xl hover:bg-orange hover:text-white transition duration-500 ease " type="submit">Submit</button>
-                <span v-if="success">SUCCESS</span>
+                <button class="m-0 m-auto block font-Nunito font-bold bg-orange sm:bg-transparent text-white sm:text-orange border-2 border-solid border-orange px-16 py-2 rounded-3xl hover:bg-orange hover:text-white transition duration-500 ease " type="submit">Submit</button>
             </div>
         </div>
     </form>
