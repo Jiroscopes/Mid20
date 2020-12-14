@@ -7,18 +7,18 @@
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="text-base lg:flex-grow">
-                <a href="#home" v-bind:class="{hidden: isHidden}" class="transition duration-500 font-Nunito font-bold text-xl block mt-4 lg:inline-block lg:mt-0 text-orange hover:text-darkBlue mr-4">
+                <NuxtLink to="/" v-bind:class="{hidden: isHidden}" class="transition duration-500 font-Nunito font-bold text-xl block mt-4 lg:inline-block lg:mt-0 text-orange hover:text-darkBlue mr-4">
                     Mid-Twenty
-                </a>
-                <a href="#home" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
+                </NuxtLink>
+                <NuxtLink to="/" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
                     Home
-                </a>
-                <a href="#recentWork" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
+                </NuxtLink>
+                <NuxtLink to="/#recentWork" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
                     Our Work
-                </a>
-                <a href="#contact" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
+                </NuxtLink>
+                <NuxtLink to="/#contact" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
                     Contact Us
-                </a>
+                </NuxtLink>
 
             </div>
         </div>

@@ -101,7 +101,7 @@
             </div>
             <div class="grid grid-cols-6 gap-4 md:grid-rows-2 grid-rows-3">
                 <div class="xl:col-start-2 col-span-full xl:col-span-4 row-start-1">
-                    <LargePortfolio image="" title="Testing" type="Website" link="/"/>
+                    <LargePortfolio image="/jiroscopes/screenshot.jpg" title="Jiroscopes.com" type="Website" link="/work/jiroscopes" />
                 </div>
                 <div class="row-start-2 xl:col-span-2 xl:col-start-2 col-span-full col-start-1 md:col-span-3">
                     <SmallPortfolio title="Testing Small titles" type="Website" link="/" />
