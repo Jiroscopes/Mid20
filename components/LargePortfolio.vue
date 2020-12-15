@@ -7,7 +7,7 @@
         <!-- Right Side -->
         <div class="col-span-full md:col-span-2 bg-cover md:bg-none flex items-center">
             <div class="px-16">
-                <h3 class="font-OpenSans font-bold text-orange text-4xl block mt-8 md:mt-16">{{title}}</h3>
+                <h3 class="font-OpenSans font-bold text-orange text-2xl block mt-8 md:mt-16">{{title}}</h3>
                 <p class="font-Nunito font-bold text-blue text-xl block mt-4">{{type}}</p>
                 <NuxtLink class="font-Nunito font-semibold text-darkBlue underline text-md my-8 md:mb-0 md:mt-16 block" :to="link">Read More</NuxtLink>
             </div>
