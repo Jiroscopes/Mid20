@@ -1,5 +1,9 @@
 export default {
 
+  googleAnalytics: {
+    id: 'UA-183041521-1'
+  },
+
   // Target (https://go.nuxtjs.dev/config-target)
    target: 'static',
 
@@ -30,26 +34,13 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+
+    '@nuxtjs/google-analytics'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [
+  modules: [],
 
-        // With options
-        ['@nuxtjs/google-gtag', { /* module options */ }]
-  ],
-  'google-gtag': {
-    id: 'G-SL1NB4G5BP',
-    config: {
-      anonymize_ip: true, // anonymize IP 
-      send_page_view: false, // might be necessary to avoid duplicated page track on page reload
-      linker: {
-        domains: ['midtwenty.com']
-      }
-    },
-    debug: true, // enable to track in dev mode
-    disableAutoPageTrack: false, // disable if you don't want to track each page route with router.afterEach(...).
-  },
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
 
