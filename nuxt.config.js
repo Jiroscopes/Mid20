@@ -1,9 +1,5 @@
 export default {
 
-  googleAnalytics: {
-    id: 'UA-183041521-1'
-  },
-
   // Target (https://go.nuxtjs.dev/config-target)
    target: 'static',
 
@@ -37,7 +33,10 @@ export default {
 
     '@nuxtjs/google-analytics'
   ],
-
+  
+  googleAnalytics: {
+    id: 'UA-183041521-1'
+  },
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [],
 
