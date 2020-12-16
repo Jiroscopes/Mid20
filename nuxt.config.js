@@ -1,7 +1,7 @@
 export default {
 
   googleAnalytics: {
-    id: 'UA-114909131-1'
+    id: 'G-SL1NB4G5BP'
   },
 
   // Target (https://go.nuxtjs.dev/config-target)
