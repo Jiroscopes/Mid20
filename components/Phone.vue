@@ -1,6 +1,6 @@
 <template>
-    <div class="lg:block sm:hidden relative">
-        <img v-bind:style="{left: mousePos[0] + 'px', top: mousePos[1] + 'px'}" class="absolute z-10" src="/floating-phone-icons.png" alt="">
+    <div class="lg:block sm:hidden relative pt-12">
+        <img v-bind:style="{left: mousePos[0] + 'px', top: mousePos[1] + 50 + 'px'}" class="absolute z-10" src="/floating-phone-icons.png" alt="">
         <img ref="phoneIMG" class="absolute z-0" src="/phone.png" alt="">
     </div> 
 </template>
@@ -31,5 +31,12 @@ export default class Phone extends Vue{
 div {
     max-width: 777.75px;
     max-height: 975px;
+
+    @media (max-width: 1460px) {
+        top: 2rem;
+    }
+    @media (max-width: 1100px) {
+        top: 8rem;
+    }
 }
 </style>

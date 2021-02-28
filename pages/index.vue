@@ -6,10 +6,10 @@
                 <div class="lg:col-span-1 lg:pl-10 lg:block col-span-0 hidden pl-0">
                     <Phone ref="phoneRef" />
                 </div>
-                <div class="lg:col-span-2 lg:text-left lg:py-48 text-center col-span-3 py-24 flex items-center justify-center">
+                <div class="lg:col-span-2 lg:text-left lg:py-48 text-left col-span-3 py-24 flex items-center">
                     <div>
                         <h1 class="lg:text-6xl font-OpenSans text-blue text-4xl font-bold"> Innovative software solutions. </h1>
-                        <h2 class="lg:text-2xl font-Nunito text-orange text-xl"> Want to customize your web presence and stand out? <br> We can help. </h2>
+                        <h2 class="lg:text-2xl font-Nunito text-darkBlue font-bold  text-xl"> We build the tools that help you grow.</h2>
                     </div>
                 </div>
             </div>
