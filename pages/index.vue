@@ -8,7 +8,7 @@
                 </div>
                 <div class="lg:col-span-2 lg:text-left lg:py-48 text-center col-span-3 py-24 flex items-center justify-center">
                     <div>
-                        <h1 class="lg:text-6xl font-OpenSans text-blue text-4xl font-bold"> Your Digital Agency </h1>
+                        <h1 class="lg:text-6xl font-OpenSans text-blue text-4xl font-bold"> Innovative software solutions. </h1>
                         <h2 class="lg:text-2xl font-Nunito text-orange text-xl"> Want to customize your web presence and stand out? <br> We can help. </h2>
                     </div>
                 </div>
