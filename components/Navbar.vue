@@ -10,20 +10,32 @@
                 <NuxtLink to="/" v-bind:class="{hidden: isHidden}" class="transition duration-500 font-Nunito font-bold text-xl block mt-4 lg:inline-block lg:mt-0 text-orange hover:text-darkBlue mr-4">
                     Mid-Twenty
                 </NuxtLink>
-                <NuxtLink to="/" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
+            </div>
+            <div>
+                <NuxtLink to="/" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text-lg block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
                     Home
                 </NuxtLink>
-                <NuxtLink to="/#recentWork" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
-                    Our Work
+                <NuxtLink to="/" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text-lg block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
+                    About Us
                 </NuxtLink>
-                <NuxtLink to="/#contact" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
+                <NuxtLink to="/" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text-lg block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
+                    Services
+                </NuxtLink>
+                <NuxtLink to="/#contact" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text-lg block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
                     Contact Us
                 </NuxtLink>
-
+                <button v-bind:class="{hidden: isHidden}" class="nav-CTA">
+                    Get in touch
+                </button>
             </div>
         </div>
     </nav>
 </template>
+<style scoped>
+.nav-CTA {
+    @apply hover:bg-orange inline rounded-full py-2 px-8 hover:text-white font-bold font-Nunito bg-transparent text-orange border-orange border-2 transition-all duration-200 ease-in ;
+}
+</style>
 <script lang="ts">
 
 import Vue from 'vue'
@@ -41,5 +53,3 @@ export default class Navbar extends Vue {
 
 }
 </script>
-<style>
-</style>
