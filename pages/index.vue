@@ -2,14 +2,15 @@
     <div id="home">
         <Navbar />
         <div @mousemove="callRef" class="bg-white grid grid-flow-row auto-rows-max">
-            <div class="grid grid-cols-3">
-                <div class="lg:col-span-1 lg:pl-10 lg:block col-span-0 hidden pl-0">
+            <div class="grid grid-cols-5">
+                <div class="lg:col-span-2 lg:pl-10 lg:block col-span-0 hidden pl-0">
                     <Phone ref="phoneRef" />
                 </div>
-                <div class="lg:col-span-2 lg:text-left lg:py-48 text-left col-span-3 py-24 flex items-center">
+                <div class="lg:col-span-3 lg:text-left lg:py-48 text-left col-span-5 py-40 flex items-center sm:text-center sm:justify-center">
                     <div>
                         <h1 class="lg:text-6xl font-OpenSans text-blue text-4xl font-bold"> Innovative software solutions. </h1>
                         <h2 class="lg:text-2xl font-Nunito text-darkBlue font-bold  text-xl"> We build the tools that help you grow.</h2>
+                        <button class="main-CTA">Get in touch</button>
                     </div>
                 </div>
             </div>
@@ -153,5 +154,9 @@ export default class index extends Vue {
 .py-60 {
     padding-top: 13rem;
     padding-bottom: 13rem;
+}
+
+.main-CTA {
+    @apply bg-orange rounded-full py-3 px-10 text-white font-bold font-Nunito mt-8 hover:bg-transparent hover:text-orange hover:border-orange border-2 transition-all duration-200 ease-in ;
 }
 </style>
