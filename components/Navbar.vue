@@ -8,7 +8,8 @@
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
             <div class="text-base lg:flex-grow">
                 <NuxtLink to="/" v-bind:class="{hidden: isHidden}" class="transition duration-500 font-Nunito font-bold text-xl block mt-4 lg:inline-block lg:mt-0 text-orange hover:text-darkBlue mr-4">
-                    Mid-Twenty
+                    <img class="inline" src="/logo.png" alt="Mid-Twenty Logo">
+                    <span class="text-blue font-bold">Mid Twenty</span>
                 </NuxtLink>
             </div>
             <div>

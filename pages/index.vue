@@ -6,7 +6,7 @@
                 <div class="lg:col-span-2 lg:pl-10 lg:block col-span-0 hidden pl-0">
                     <Phone ref="phoneRef" />
                 </div>
-                <div class="lg:col-span-3 lg:text-left lg:py-48 text-left col-span-5 py-40 flex items-center sm:text-center sm:justify-center">
+                <div class="lg:col-span-3 lg:text-left lg:pb-48 lg:pt-64 text-left col-span-5 pb-40 flex items-center sm:text-center sm:justify-center">
                     <div>
                         <h1 class="lg:text-6xl font-OpenSans text-blue text-4xl font-bold"> Innovative software solutions. </h1>
                         <h2 class="lg:text-2xl font-Nunito text-darkBlue font-bold  text-xl"> We build the tools that help you grow.</h2>
@@ -26,9 +26,6 @@
 
 
         <section id="wwd" class="bg-blue grid grid-flow auto-rows-max">
-            <div class="flex justify-center py-24" >
-                <img src="/icons/WWD.png" alt="What We Do" >
-            </div>
             <div class="grid xl:grid-cols-8 lg:gap-6 xl:gap-0 lg:grid-cols-2 grid-cols-10 sm:px-20 px-4 pb-24">
                 <div class="xl:col-start-1 xl:col-end-3 lg:col-span-2 col-span-10 py-8 lg:py-0">
                     <ServiceBox image="/web_icon.png" title="Website Design" text="Custom website designs that help you make your mark on the web. We design each website to maximize the effectiveness of your company. We want to help you make your online presence a delight for your customers." />
