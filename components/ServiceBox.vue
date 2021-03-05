@@ -1,9 +1,9 @@
 <template>
     <div class="serviceBox">
-        <div class="flex py-8 font-Nunito font-semibold text-2xl mx-8">
+        <div class="flex lg:py-8 font-Nunito font-semibold text-2xl lg:mx-8">
             <h4 class="text-white">{{ title }} </h4>
         </div>
-        <div class="flex mx-8 pb-8 font-Nunito text-md">
+        <div class="flex lg:mx-8 my-2 lg:my-0 lg:pb-8 font-Nunito text-md">
             <p class="text-white" >{{ text }}</p>
         </div>
     </div>

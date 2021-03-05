@@ -26,8 +26,8 @@
 
 
         <section id="wwd" class="bg-blue grid grid-flow auto-rows-max py-24">
-            <div class="grid xl:grid-cols-10 xl:gap-0 sm:px-20 px-4 pb-24">
-                <div class="col-start-2 col-end-5 col-span-5">
+            <div class="grid grid-cols-10 gap-0 sm:px-20 px-4 pb-24 z-20 relative">
+                <div class="lg:col-start-2 lg:col-end-5 lg:col-span-5 col-start-1 col-end-10 col-span-10">
                     <h2 class="section-headers">What We Do</h2>
                     <span class="w-48 bg-orange block h-1 my-4 rounded-full"></span>
                     <p class="text-white font-Nunito w-4/5">
@@ -40,17 +40,17 @@
                         We are committed to understanding and researching your business so that we can serve your business the best way possible.
                     </p>
                 </div>
-                <div class="grid gap-6 grid-cols-6 col-start-5 col-end-11">
-                    <div :class="this.activeBox === 'Website Design' ? 'wwd-shadow' : ''"  class="serviceBox-comp-holder">
-                        <ServiceBox class="wwd-shadow" image="/web_icon.png" title="Website Design" text="Custom website designs that help you make your mark on the web. We design each website to maximize the effectiveness of your company. We want to help you make your online presence a delight for your customers." />
+                <div class="grid lg:gap-6 lg:grid-cols-6 lg:col-start-5 col-start-1 col-end-11">
+                    <div @mouseover="triggerShadow('web-design')" id="web-design" class="serviceBox-comp-holder wwd-shadow">
+                        <ServiceBox image="/web_icon.png" title="Website Design" text="Custom website designs that help you make your mark on the web. We design each website to maximize the effectiveness of your company. We want to help you make your online presence a delight for your customers." />
                     </div>
-                    <div class="serviceBox-comp-holder">
+                    <div @mouseover="triggerShadow('web-development')" id="web-development" class="serviceBox-comp-holder">
                         <ServiceBox image="/web_dev.png" title="Web Development" text="Build your dream website with completely custom experiences for your business. We can build your online presense to suit your business’s needs, no templates." />
                     </div>
-                    <div class="serviceBox-comp-holder">
+                    <div @mouseover="triggerShadow('software-development')" id="software-development" class="serviceBox-comp-holder">
                         <ServiceBox image="/cube.png" title="Software Development" text="From automation, apps,  data analysis, and software integration we can develop it all. We can create any tools your buisness needs to track metrics or automate tasks to make your business run smoother and grow faster." />
                     </div>
-                    <div class="serviceBox-comp-holder">
+                    <div @mouseover="triggerShadow('product-development')" id="product-development" class="serviceBox-comp-holder">
                         <ServiceBox image="/cube.png" title="Product Development" text="TO DO" />
                     </div>
                 </div>
@@ -163,9 +163,16 @@ export default class index extends Vue {
         this.$refs.phoneRef.changePhonePos(event.clientX, event.clientY);
     }
 
-    // checkMouseEvent(title: string) : void {
-    //     console.log(title);
-    // }
+    triggerShadow(id: string): void {
+        let serviceBoxes = document.querySelectorAll('.wwd-shadow');
+
+        serviceBoxes.forEach(el => {
+            console.log(el.classList.remove('wwd-shadow'));
+        });
+
+        let elem = document.getElementById(id);
+        elem?.classList.add('wwd-shadow');
+    }
 }
 </script>
 
@@ -180,14 +187,16 @@ export default class index extends Vue {
 }
 
 .serviceBox-comp-holder {
-    @apply col-span-3 py-8 lg:py-0 max-h-64 wwd-shadow;
+    @apply overflow-hidden col-span-10 md:col-span-5 xl:col-span-3 py-8 lg:py-0 max-h-80 transition-all duration-200 ease-in rounded-3xl;
 }
 
 .section-headers {
     @apply text-white font-OpenSans font-bold text-6xl;
 }
 
-.wwd-shadow:hover {
-    box-shadow: 6px 6px 17px 3px rgba(7, 13, 89, 0.4);
+.wwd-shadow {
+    @media(min-width: 1024px) {
+        box-shadow: 6px 6px 17px 3px rgba(7, 13, 89, 0.4);
+    }
 }
 </style>
