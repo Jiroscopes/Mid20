@@ -3,7 +3,7 @@
         <div class="flex py-8 font-Nunito font-semibold text-2xl mx-8">
             <h4 class="text-white">{{ title }} </h4>
         </div>
-        <div class="flex mx-8 font-Nunito text-md">
+        <div class="flex mx-8 pb-8 font-Nunito text-md">
             <p class="text-white" >{{ text }}</p>
         </div>
     </div>
@@ -34,13 +34,13 @@ export default class ServiceBox extends ServiceProps {
 <style scoped>
 
 .serviceBox {
-    @apply grid grid-flow-row auto-rows-max bg-blue rounded-3xl wwd-shadow transform  transition duration-500 ease-in-out;
+    @apply grid grid-flow-row auto-rows-max bg-blue rounded-3xl min-h-full transform  transition duration-500 ease-in-out;
+    /* min-height: 17rem; */
 }
 
 .serviceBox-title {
 
 }
-
 
 .wwd-shadow:hover {
     box-shadow: 6px 6px 17px 3px rgba(7, 13, 89, 0.4);
