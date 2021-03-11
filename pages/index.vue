@@ -29,7 +29,7 @@
             <div class="grid grid-cols-10 gap-0 sm:px-20 px-4 pb-24 z-20 relative">
                 <div class="lg:col-start-2 lg:col-end-5 lg:col-span-5 col-start-1 col-end-10 col-span-10">
                     <h2 class="section-headers">What We Do</h2>
-                    <span class="w-48 bg-orange block h-1 my-4 rounded-full"></span>
+                    <span class="w-48 bg-orange block h-1 mb-8 rounded-full"></span>
                     <p class="text-white font-Nunito w-4/5">
                         We create high quality web based applications to give your business everything it needs in todays marketplace. 
                         The way we do business online has changed for good, just offering services online is not enough anymore, it matters how. 
@@ -61,10 +61,10 @@
         <!-- Tech Section -->
         
 
-        <section class="grid grid-flow-row grid-rows-1 auto-rows-min md:px-20 px-4 py-24 bg-darkBlue">
+        <section class="grid grid-flow-row grid-rows-1 auto-rows-min md:px-20 px-4 py-24 bg-white">
             <div class="row-start-1 grid grid-flow-row auto-rows-min grid-cols-8">
-                <h2 class="lg:col-span-3 col-span-full text-white font-OpenSans text-3xl font-bold">Leveraging the best <br> technologies for the job.</h2>
-                <span class="row-start-2 md:col-span-3 col-span-full bg-orange block h-1 my-4"></span>
+                <h2 class="lg:col-span-full col-span-full text-blue font-OpenSans text-3xl font-bold">Leveraging the best technologies for the job.</h2>
+                <span class="row-start-2 col-span-2 bg-orange block h-1 mt-2 mb-4 rounded"></span>
             </div>
             <div class="relative z-20 row-start-2">
                 <h3 class="text-white text-xl font-OpenSans font-semibold">Languages:</h3>
@@ -106,29 +106,9 @@
         </section>
         
 
-        <img class="absolute right-0 xl:top-circleLines hidden xl:block hidden" src="/lines_1.png" alt="Circle Pattern">
+        <!-- <img class="absolute right-0 xl:top-circleLines hidden xl:block hidden" src="/lines_1.png" alt="Circle Pattern"> -->
 
-        <!-- Recent Work -->
-        
-
-        <section id="recentWork" class="bg-white md:px-20 py-24 px-4">
-            <div class="flex justify-center py-24" >
-                <img src="/RW.png" alt="Recent Work" >
-            </div>
-            <div class="grid grid-cols-6 gap-4 md:grid-rows-2 grid-rows-3">
-                <div class="xl:col-start-2 col-span-full xl:col-span-4 row-start-1">
-                    <LargePortfolio image="/jiroscopes/screenshot.jpg" title="Jiroscopes.com" type="Website" link="/work/jiroscopes" />
-                </div>
-                <div class="row-start-2 xl:col-span-2 xl:col-start-2 col-span-full col-start-1 md:col-span-3">
-                    <SmallPortfolio title="Testing Small titles" type="Website" link="/" />
-                </div>
-                <div class="md:row-start-2 row-start-3 xl:col-span-2 xl:col-start-4 col-span-full col-start-1 md:col-span-3">
-                    <SmallPortfolio title="Testing Small" type="Website" link="/" />
-                </div>
-            </div>
-        </section>
-
-        <img class="absolute h-circleMD lg:h-full xl:top-circle2XL lg:top-circle2LG md:top-circle2MD md:block hidden" src="/circle2.png" alt="Circle Pattern">
+        <!-- <img class="absolute h-circleMD lg:h-full xl:top-circle2XL lg:top-circle2LG md:top-circle2MD md:block hidden" src="/circle2.png" alt="Circle Pattern"> -->
 
         <!-- Contact Section -->
 
