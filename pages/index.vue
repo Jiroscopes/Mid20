@@ -41,16 +41,16 @@
                     </p>
                 </div>
                 <div class="grid lg:gap-6 lg:grid-cols-6 lg:col-start-5 col-start-1 col-end-11">
-                    <div @mouseover="triggerShadow('web-design')" id="web-design" class="serviceBox-comp-holder wwd-shadow">
+                    <div @mouseover="triggerShadow('web-design')" id="web-design" class="overflow-hidden col-span-10 md:col-span-5 xl:col-span-3 py-8 lg:py-0 max-h-80 transition-all duration-200 ease-in rounded-3xl wwd-shadow">
                         <ServiceBox image="/web_icon.png" title="Website Design" text="Custom website designs that help you make your mark on the web. We design each website to maximize the effectiveness of your company. We want to help you make your online presence a delight for your customers." />
                     </div>
-                    <div @mouseover="triggerShadow('web-development')" id="web-development" class="serviceBox-comp-holder">
+                    <div @mouseover="triggerShadow('web-development')" id="web-development" class="overflow-hidden col-span-10 md:col-span-5 xl:col-span-3 py-8 lg:py-0 max-h-80 transition-all duration-200 ease-in rounded-3xl">
                         <ServiceBox image="/web_dev.png" title="Web Development" text="Build your dream website with completely custom experiences for your business. We can build your online presense to suit your business’s needs, no templates." />
                     </div>
-                    <div @mouseover="triggerShadow('software-development')" id="software-development" class="serviceBox-comp-holder">
+                    <div @mouseover="triggerShadow('software-development')" id="software-development" class="overflow-hidden col-span-10 md:col-span-5 xl:col-span-3 py-8 lg:py-0 max-h-80 transition-all duration-200 ease-in rounded-3xl">
                         <ServiceBox image="/cube.png" title="Software Development" text="From automation, apps,  data analysis, and software integration we can develop it all. We can create any tools your buisness needs to track metrics or automate tasks to make your business run smoother and grow faster." />
                     </div>
-                    <div @mouseover="triggerShadow('product-development')" id="product-development" class="serviceBox-comp-holder">
+                    <div @mouseover="triggerShadow('product-development')" id="product-development" class="overflow-hidden col-span-10 md:col-span-5 xl:col-span-3 py-8 lg:py-0 max-h-80 transition-all duration-200 ease-in rounded-3xl">
                         <ServiceBox image="/cube.png" title="Product Development" text="TO DO" />
                     </div>
                 </div>
@@ -177,17 +177,18 @@ export default class index extends Vue {
 </script>
 
 <style scoped>
+
 .py-60 {
     padding-top: 13rem;
     padding-bottom: 13rem;
 }
 
 .main-CTA {
-    @apply bg-orange rounded-full py-3 px-10 text-white font-bold font-Nunito mt-8 hover:bg-transparent hover:text-orange hover:border-orange border-2 transition-all duration-200 ease-in ;
+    @apply bg-orange rounded-full py-3 px-10 text-white font-bold font-Nunito mt-8  border-2 transition-all duration-200 ease-in ;
 }
 
-.serviceBox-comp-holder {
-    @apply overflow-hidden col-span-10 md:col-span-5 xl:col-span-3 py-8 lg:py-0 max-h-80 transition-all duration-200 ease-in rounded-3xl;
+.main-CTA:hover {
+    @apply bg-transparent text-orange border-orange;
 }
 
 .section-headers {
