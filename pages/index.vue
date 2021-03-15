@@ -10,7 +10,7 @@
                     <div>
                         <h1 class="lg:text-6xl font-OpenSans text-blue text-4xl font-bold"> Innovative software solutions. </h1>
                         <h2 class="lg:text-2xl font-Nunito text-darkBlue font-bold  text-xl"> We build the tools that help you grow.</h2>
-                        <button class="main-CTA">Get in touch</button>
+                        <CTAButton />
                     </div>
                 </div>
             </div>
@@ -27,8 +27,8 @@
 
         <section id="wwd" class="bg-blue grid grid-flow auto-rows-max py-24">
             <div class="grid grid-cols-10 gap-0 sm:px-20 px-4 pb-24 z-20 relative">
-                <div class="lg:col-start-2 lg:col-end-5 lg:col-span-5 col-start-1 col-end-10 col-span-10">
-                    <h2 class="section-headers">What We Do</h2>
+                <div class="lg:col-start-1 lg:col-end-5 lg:col-span-5 col-start-1 col-end-10 col-span-10">
+                    <h2 class="text-white font-OpenSans font-bold text-6xl">What We Do</h2>
                     <span class="w-48 bg-orange block h-1 mb-8 rounded-full"></span>
                     <p class="text-white font-Nunito w-4/5">
                         We create high quality web based applications to give your business everything it needs in todays marketplace. 
@@ -56,6 +56,9 @@
                 </div>
             </div>
         </section>
+
+
+        <SectionsTestimonials />
 
 
         <!-- Tech Section -->
@@ -163,17 +166,13 @@ export default class index extends Vue {
     padding-bottom: 13rem;
 }
 
-.main-CTA {
+/* .main-CTA {
     @apply bg-orange rounded-full py-3 px-10 text-white font-bold font-Nunito mt-8  border-2 transition-all duration-200 ease-in ;
-}
+} */
 
-.main-CTA:hover {
+/* .main-CTA:hover {
     @apply bg-transparent text-orange border-orange;
-}
-
-.section-headers {
-    @apply text-white font-OpenSans font-bold text-6xl;
-}
+} */
 
 .wwd-shadow {
     @media(min-width: 1024px) {
