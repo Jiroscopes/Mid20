@@ -12,7 +12,8 @@ module.exports = {
                 'd2c':"url('/d2c.jpg')",
             },
             inset: {
-                circleLines: '1400px',
+                circleLinesLG: '1750px',
+                circleLines: '1500px',
                 circle2XL: '1780px',
                 circle2LG: '2900px',
                 circle2MD: '2800px',

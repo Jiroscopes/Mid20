@@ -25,8 +25,8 @@
         <!-- Services Section -->
 
 
-        <section id="wwd" class="bg-blue grid grid-flow auto-rows-max py-24">
-            <div class="grid grid-cols-10 gap-0 sm:px-20 px-4 pb-24 z-20 relative">
+        <section id="wwd" class="bg-blue grid grid-flow auto-rows-max py-24 md:px-32 px-4">
+            <div class="grid grid-cols-10 gap-0 pb-24 z-20 relative">
                 <div class="lg:col-start-1 lg:col-end-5 lg:col-span-5 col-start-1 col-end-10 col-span-10">
                     <h2 class="text-white font-OpenSans font-bold text-6xl">What We Do</h2>
                     <span class="w-48 bg-orange block h-1 mb-8 rounded-full"></span>
@@ -64,7 +64,7 @@
         <!-- Tech Section -->
         
 
-        <section class="grid grid-flow-row grid-rows-1 auto-rows-min md:px-20 px-4 py-24 bg-white">
+        <section class="grid grid-flow-row grid-rows-1 auto-rows-min md:px-32 px-4 py-24 bg-white">
             <div class="row-start-1 grid grid-flow-row auto-rows-min grid-cols-8">
                 <h2 class="lg:col-span-full col-span-full text-blue font-OpenSans text-3xl font-bold">Leveraging the best technologies for the job.</h2>
                 <span class="row-start-2 col-span-2 bg-orange block h-1 mt-2 mb-4 rounded"></span>
@@ -109,9 +109,9 @@
         </section>
         
 
-        <!-- <img class="absolute right-0 xl:top-circleLines hidden xl:block hidden" src="/lines_1.png" alt="Circle Pattern"> -->
+        <img class="absolute right-0 circleLines xl:top-circleLines xl:block hidden" src="/lines_1.png" alt="Circle Pattern">
 
-        <!-- <img class="absolute h-circleMD lg:h-full xl:top-circle2XL lg:top-circle2LG md:top-circle2MD md:block hidden" src="/circle2.png" alt="Circle Pattern"> -->
+        <img class="testimonial-circles z-10 absolute h-circleMD lg:h-full xl:top-circle2XL lg:top-circle2LG md:top-circle2MD md:block hidden" src="/circle2.png" alt="Circle Pattern">
 
         <!-- Contact Section -->
 
@@ -166,13 +166,15 @@ export default class index extends Vue {
     padding-bottom: 13rem;
 }
 
-/* .main-CTA {
-    @apply bg-orange rounded-full py-3 px-10 text-white font-bold font-Nunito mt-8  border-2 transition-all duration-200 ease-in ;
-} */
+.circleLines {
+    @media (max-width: 1600px) {
+        top: 1750px;
+    }
+}
 
-/* .main-CTA:hover {
-    @apply bg-transparent text-orange border-orange;
-} */
+.testimonial-circles {
+    left: -70px;
+}
 
 .wwd-shadow {
     @media(min-width: 1024px) {
