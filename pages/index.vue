@@ -10,7 +10,7 @@
                     <div>
                         <h1 class="lg:text-6xl font-OpenSans text-blue text-4xl font-bold"> Innovative software solutions. </h1>
                         <h2 class="lg:text-2xl font-Nunito text-darkBlue font-bold  text-xl"> We build the tools that help you grow.</h2>
-                        <CTAButton />
+                        <CTAButton class="inline-block" />
                     </div>
                 </div>
             </div>
