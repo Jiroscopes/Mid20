@@ -15,7 +15,7 @@
       <div class="xl:col-start-4 xl:col-span-2 lg:col-span-3 lg:col-start-5 md:col-span-4 md:col-start-5 col-span-full">
         <p class="text-white font-Nunito">
           <span class="quote text-orange inline-block">“</span>
-          Steven was responsive, communicative and sharp. A great problem solver! I had hired two freelancers prior to Steven and they could not figure out the problem, but Steven solved it right away. Would highly recommend!
+          Mid-Twenty was responsive, communicative and sharp. A great problem solver! I had hired two freelancers prior to Mid-Twenty and they could not figure out the problem, but Mid-Twenty solved it right away. Would highly recommend!
         </p>
         <p class="text-white font-Nunito pt-6">- Jessica, Truster Building and Fence</p>
       </div>

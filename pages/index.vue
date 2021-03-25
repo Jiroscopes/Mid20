@@ -50,9 +50,9 @@
                     <div @mouseover="triggerShadow('software-development')" id="software-development" class="overflow-hidden col-span-10 md:col-span-5 xl:col-span-3 py-8 lg:py-0 max-h-80 transition-all duration-200 ease-in rounded-3xl">
                         <ServiceBox image="/cube.png" title="Software Development" text="From automation, apps,  data analysis, and software integration we can develop it all. We can create any tools your buisness needs to track metrics or automate tasks to make your business run smoother and grow faster." />
                     </div>
-                    <div @mouseover="triggerShadow('product-development')" id="product-development" class="overflow-hidden col-span-10 md:col-span-5 xl:col-span-3 py-8 lg:py-0 max-h-80 transition-all duration-200 ease-in rounded-3xl">
+                    <!-- <div @mouseover="triggerShadow('product-development')" id="product-development" class="overflow-hidden col-span-10 md:col-span-5 xl:col-span-3 py-8 lg:py-0 max-h-80 transition-all duration-200 ease-in rounded-3xl">
                         <ServiceBox image="/cube.png" title="Product Development" text="TO DO" />
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
