@@ -15,15 +15,15 @@
         <!-- Menu Items -->
         <div class=" inline-block flex-grow lg:flex lg:items-center lg:w-auto" v-bind:class="{hidden: isHidden, 'w-full': !isHidden}">
             <div class="ml-auto">
-                <NuxtLink to="/" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text-lg block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
+                <NuxtLink to="/#home" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text-lg block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
                     Home
                 </NuxtLink>
-                <NuxtLink to="/" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text-lg block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
-                    About Us
-                </NuxtLink>
-                <NuxtLink to="/" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text-lg block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
+                <NuxtLink to="/#wwd" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text-lg block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
                     Services
                 </NuxtLink>
+                <!-- <NuxtLink to="/" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text-lg block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
+                    Services
+                </NuxtLink> -->
                 <NuxtLink to="/#contact" v-bind:class="{hidden: isHidden}" class="font-Nunito font-bold text-lg block mt-4 lg:inline-block lg:mt-0 text-blue hover:text-darkBlue mr-4">
                     Contact Us
                 </NuxtLink>

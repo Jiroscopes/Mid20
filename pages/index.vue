@@ -126,6 +126,12 @@
             <p class="absolute bottom-0 left-0 text-white font-Nunito p-3 z-10">	&#169; Mid-Twenty LLC 2020</p>
             <img class="absolute md:block bottom-0 right-0" src="/morecircles.png" alt="Bottom Circles">
         </section>
+        <!-- <section id="contact" class="relative grid grid-flow-row grid-rows-1 auto-rows-min md:px-32 px-4 py-24 bg-blue">
+            <div class="text-center">
+                <h3>Is software important to your business?</h3>
+                <h2>Build it with Mid Twenty</h2>
+            </div>
+        </section> -->
     </div>
 </template>
 
