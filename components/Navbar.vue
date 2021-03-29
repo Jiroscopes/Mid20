@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex bg-white flex-wrap justify-between items-center px-20 py-3 w-full fixed z-30">
+    <nav class="flex bg-white flex-wrap justify-between items-center md:px-20 px-4 py-3 w-full fixed z-30">
         <div class="inline-block">
             <div class="text-base">
                 <NuxtLink to="/" class="transition duration-500 font-Nunito font-bold text-xl block lg:inline-block lg:mt-0 text-orange hover:text-darkBlue mr-4">
