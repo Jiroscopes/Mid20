@@ -1,25 +1,23 @@
 <template>
     <div id="home">
         <Navbar />
-        <div @mousemove="callRef" class="bg-white grid grid-flow-row auto-rows-max py-20">
-            <div class="grid grid-cols-5">
-                <div class="lg:col-span-2 lg:pl-10 lg:block col-span-0 hidden pl-0">
-                    <Phone ref="phoneRef" />
+        <div class="bg-white grid pt-20 px-20">
+            <div class="grid grid-cols-5 lg:pt-48 pt-20">
+                <div class="col-span-4 text-left landing-text">
+                    <h1 class="lg:text-6xl font-OpenSans text-blue text-4xl font-bold"> Innovative software solutions. </h1>
+                    <h2 class="lg:text-2xl font-Nunito text-darkBlue font-bold  text-xl"> We build the tools that help you grow.</h2>
+                    <CTAButton class="inline-block" />
                 </div>
-                <div class="lg:col-span-3 lg:text-left lg:pb-48 lg:pt-64 col-span-5 pb-40 flex items-center text-center sm:justify-center">
-                    <div>
-                        <h1 class="lg:text-6xl font-OpenSans text-blue text-4xl font-bold"> Innovative software solutions. </h1>
-                        <h2 class="lg:text-2xl font-Nunito text-darkBlue font-bold  text-xl"> We build the tools that help you grow.</h2>
-                        <CTAButton class="inline-block" />
-                    </div>
-                </div>
+                <div class="col-span-3 text-right -mt-32 col-start-3 landing-image">
+                    <img class="inline" src="/landing-img.png" alt="">
+                </div> 
             </div>
-            <div class="flex justify-center pb-8">
+            <!-- <div class="flex justify-center pb-8">
                <a href="#wwd"><ScrollIcon /></a>
-            </div>
+            </div> -->
         </div>
 
-        <img class="absolute lg:top-xl md:top-lg md:block hidden" src="/circle1.png" alt="Circle Pattern">
+        <!-- <img class="absolute lg:top-xl md:top-lg md:block hidden" src="/circle1.png" alt="Circle Pattern"> -->
 
 
         <!-- Services Section -->
@@ -167,6 +165,24 @@ export default class index extends Vue {
 
 <style scoped>
 
+.landing-text {
+    margin-bottom: -300px;
+    z-index: 999;
+}
+
+@media (max-width: 1880px) {
+    .landing-text {
+        margin-bottom: 0;
+        text-align: center;
+        @apply col-span-full;
+    }
+
+    .landing-image {
+        @apply col-span-full pt-32;
+        text-align: center;
+    }
+}
+
 .py-60 {
     padding-top: 13rem;
     padding-bottom: 13rem;
@@ -187,4 +203,5 @@ export default class index extends Vue {
         box-shadow: 6px 6px 17px 3px rgba(7, 13, 89, 0.4);
     }
 }
+
 </style>
