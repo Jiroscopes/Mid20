@@ -1,7 +1,7 @@
 <template>
     <div id="home">
         <Navbar />
-        <div class="bg-white sm:grid pt-20 sm:px-20 px-4">
+        <div class="bg-white sm:grid sm:pt-20 pt-10 sm:px-20 px-4">
             <div class="sm:grid sm:grid-cols-5 sm:pt-48 pt-20">
                 <div class="col-span-4 text-left landing-text">
                     <h1 class="lg:text-6xl sm:text-5xl font-OpenSans text-blue text-3xl font-bold"> Innovative software solutions. </h1>
