@@ -1,7 +1,7 @@
 <template>
   <section class="bg-darkBlue grid grid-flow-row grid-rows-1 auto-rows-min md:px-32 px-4 py-24">
     <div class="row-start-1 grid grid-flow-row auto-rows-min grid-cols-8">
-        <h2 class="lg:col-span-full col-span-full text-white font-OpenSans text-3xl font-bold">What our clients are saying</h2>
+        <h2 class="lg:col-span-full col-span-full text-white font-OpenSans text-3xl font-bold">What our clients are saying...</h2>
         <span class="row-start-2 col-span-1 bg-orange block h-1 mt-2 mb-4 rounded"></span>
     </div>
     <div class="grid grid-flow-row grid-cols-8 py-10 md:gap-4 gap-6">

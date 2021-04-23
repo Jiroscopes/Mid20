@@ -1,115 +1,13 @@
 <template>
     <div id="home">
         <Navbar />
-        <div class="bg-white sm:grid sm:pt-20 pt-10 sm:px-20 px-4">
-            <div class="sm:grid sm:grid-cols-5 sm:pt-48 pt-20">
-                <div class="col-span-4 text-left landing-text">
-                    <h1 class="lg:text-6xl sm:text-5xl font-OpenSans text-blue text-3xl font-bold"> Innovative software solutions. </h1>
-                    <h2 class="lg:text-2xl font-Nunito text-darkBlue font-bold  text-xl"> We build the tools that help you grow.</h2>
-                    <CTAButton class="inline-block" />
-                </div>
-                <div class="col-span-3 text-right -mt-32 col-start-3 landing-image">
-                    <img class="inline" src="/landing-img.png" alt="">
-                </div> 
-            </div>
-            <!-- <div class="flex justify-center pb-8">
-               <a href="#wwd"><ScrollIcon /></a>
-            </div> -->
-        </div>
-
-        <!-- <img class="absolute lg:top-xl md:top-lg md:block hidden" src="/circle1.png" alt="Circle Pattern"> -->
-
-
-        <!-- Services Section -->
-
-
-        <section id="wwd" class="bg-blue grid grid-flow auto-rows-max py-24 md:px-32 px-4">
-            <div class="grid grid-cols-10 gap-0 pb-24 z-20 relative">
-                <div class="lg:col-start-1 lg:col-end-5 lg:col-span-5 col-start-1 col-end-10 col-span-10">
-                    <h2 class="text-white font-OpenSans font-bold text-6xl">What We Do</h2>
-                    <span class="w-48 bg-orange block h-1 mb-8 rounded-full"></span>
-                    <p class="text-white font-Nunito w-4/5">
-                        We create high quality web based applications to give your business everything it needs in todays marketplace. 
-                        The way we do business online has changed for good, just offering services online is not enough anymore, it matters how. 
-                        Companies that realize the change and can start generating more value will go farther.
-                        <br />
-                        <br />
-                         We’ll help you grow your online presence. 
-                        We are committed to understanding and researching your business so that we can serve your business the best way possible.
-                    </p>
-                </div>
-                <div class="grid lg:gap-6 lg:grid-cols-6 lg:col-start-5 col-start-1 col-end-11">
-                    <div @mouseover="triggerShadow('web-design')" id="web-design" class="overflow-hidden col-span-10 md:col-span-5 xl:col-span-3 py-8 lg:py-0 max-h-80 transition-all duration-200 ease-in rounded-3xl wwd-shadow">
-                        <ServiceBox image="/web_icon.png" title="Website Design" text="Custom website designs that help you make your mark on the web. We design each website to maximize the effectiveness of your company. We want to help you make your online presence a delight for your customers." />
-                    </div>
-                    <div @mouseover="triggerShadow('web-development')" id="web-development" class="overflow-hidden col-span-10 md:col-span-5 xl:col-span-3 py-8 lg:py-0 max-h-80 transition-all duration-200 ease-in rounded-3xl">
-                        <ServiceBox image="/web_dev.png" title="Web Development" text="Build your dream website with completely custom experiences for your business. We can build your online presense to suit your business’s needs, no templates." />
-                    </div>
-                    <div @mouseover="triggerShadow('software-development')" id="software-development" class="overflow-hidden col-span-10 md:col-span-5 xl:col-span-3 py-8 lg:py-0 max-h-80 transition-all duration-200 ease-in rounded-3xl">
-                        <ServiceBox image="/cube.png" title="Software Development" text="From automation, apps,  data analysis, and software integration we can develop it all. We can create any tools your buisness needs to track metrics or automate tasks to make your business run smoother and grow faster." />
-                    </div>
-                    <!-- <div @mouseover="triggerShadow('product-development')" id="product-development" class="overflow-hidden col-span-10 md:col-span-5 xl:col-span-3 py-8 lg:py-0 max-h-80 transition-all duration-200 ease-in rounded-3xl">
-                        <ServiceBox image="/cube.png" title="Product Development" text="TO DO" />
-                    </div> -->
-                </div>
-            </div>
-        </section>
-
-
-        <SectionsTestimonials />
-
-
-        <!-- Tech Section -->
-        
-
-        <section class="grid grid-flow-row grid-rows-1 auto-rows-min md:px-32 px-4 py-24 bg-white">
-            <div class="row-start-1 grid grid-flow-row auto-rows-min grid-cols-8">
-                <h2 class="lg:col-span-full col-span-full text-blue font-OpenSans text-3xl font-bold">Leveraging the best technologies for the job.</h2>
-                <span class="row-start-2 col-span-2 bg-orange block h-1 mt-2 mb-4 rounded"></span>
-            </div>
-            <div class="relative z-20 row-start-2">
-                <h3 class="text-white text-xl font-OpenSans font-semibold">Languages:</h3>
-                <div class="grid grid-flow-row xl:grid-cols-7 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-8 gap-0" >
-                    <div class="col-span-1 my-4 md:px-4">
-                        <TechBubble text="JavaScript" />
-                    </div>
-                    <div class="col-span-1 my-4 md:px-4">
-                        <TechBubble text="PHP" />
-                    </div> 
-                    <div class="col-span-1 my-4 md:px-4">
-                        <TechBubble text="C++" />
-                    </div> 
-                    <div class="col-span-1 my-4 md:px-4">
-                        <TechBubble text="Go" />
-                    </div> 
-                    <div class="col-span-1 my-4 md:px-4">
-                        <TechBubble text="HTML/CSS" />
-                    </div> 
-                </div>
-            </div>
-            <div class="relative z-20 row-start-3">
-                <h3 class="text-white text-xl font-OpenSans font-semibold">Frameworks:</h3>
-                <div class="grid grid-flow-row xl:grid-cols-7 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-8 gap-0" >
-                    <div class="col-span-1 my-4 md:px-4">
-                        <TechBubble text="Vue.js" />
-                    </div>
-                    <div class="col-span-1 my-4 md:px-4">
-                        <TechBubble text="React.js" />
-                    </div> 
-                    <div class="col-span-1 my-4 md:px-4">
-                        <TechBubble text="Bootstrap" />
-                    </div> 
-                    <div class="col-span-1 my-4 md:px-4">
-                        <TechBubble text="Express.js" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-
+        <SectionsHero />
+        <SectionsWhatWeDo />
+        <SectionsTestimonials />        
+        <SectionsTech />
         <img class="absolute right-0 circleLines xl:top-circleLines xl:block hidden" src="/lines_1.png" alt="Circle Pattern">
 
-        <img class="testimonial-circles z-10 absolute h-circleMD lg:h-full xl:top-circle2XL lg:top-circle2LG md:top-circle2MD md:block hidden" src="/circle2.png" alt="Circle Pattern">
+        <!-- <img class="circle2 testimonial-circles z-10 absolute h-circleMD lg:h-full xl:top-circle2XL lg:top-circle2LG md:top-circle2MD md:block hidden" src="/circle2.png" alt="Circle Pattern"> -->
 
         <!-- Contact Section -->
 
@@ -124,12 +22,7 @@
             <p class="absolute bottom-0 left-0 text-white font-Nunito p-3 z-10">	&#169; Mid-Twenty LLC 2020</p>
             <img class="absolute md:block bottom-0 right-0" src="/morecircles.png" alt="Bottom Circles">
         </section>
-        <!-- <section id="contact" class="relative grid grid-flow-row grid-rows-1 auto-rows-min md:px-32 px-4 py-24 bg-blue">
-            <div class="text-center">
-                <h3>Is software important to your business?</h3>
-                <h2>Build it with Mid Twenty</h2>
-            </div>
-        </section> -->
+        <!-- <SectionsLandingContact /> -->
     </div>
 </template>
 
@@ -141,47 +34,12 @@ import Component from 'vue-class-component';
 export default class index extends Vue {
     data() {
         return {
-//            mouseEnter: false,
-            activeBox: "Website Design",
         }
-    }
-    callRef(): void {
-        //@ts-ignore
-        this.$refs.phoneRef.changePhonePos(event.clientX, event.clientY);
-    }
-
-    triggerShadow(id: string): void {
-        let serviceBoxes = document.querySelectorAll('.wwd-shadow');
-
-        serviceBoxes.forEach(el => {
-            console.log(el.classList.remove('wwd-shadow'));
-        });
-
-        let elem = document.getElementById(id);
-        elem?.classList.add('wwd-shadow');
     }
 }
 </script>
 
 <style scoped>
-
-.landing-text {
-    margin-bottom: -300px;
-    z-index: 999;
-}
-
-@media (max-width: 1880px) {
-    .landing-text {
-        margin-bottom: 0;
-        text-align: center;
-        @apply col-span-full;
-    }
-
-    .landing-image {
-        @apply col-span-full pt-32;
-        text-align: center;
-    }
-}
 
 .py-60 {
     padding-top: 13rem;
@@ -191,16 +49,6 @@ export default class index extends Vue {
 .circleLines {
     @media (max-width: 1600px) {
         top: 1750px;
-    }
-}
-
-.testimonial-circles {
-    left: -70px;
-}
-
-.wwd-shadow {
-    @media(min-width: 1024px) {
-        box-shadow: 6px 6px 17px 3px rgba(7, 13, 89, 0.4);
     }
 }
 

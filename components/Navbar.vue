@@ -1,10 +1,10 @@
 <template>
-    <nav class="flex bg-white flex-wrap justify-between items-center md:px-20 px-4 py-3 w-full fixed z-30">
+    <nav class="flex bg-white flex-wrap justify-between items-center md:px-20 px-4 py-5 w-full fixed z-30">
         <div class="inline-block">
             <div class="text-base">
-                <NuxtLink to="/" class="transition duration-500 font-Nunito font-bold text-xl block lg:inline-block lg:mt-0 text-orange hover:text-darkBlue mr-4">
-                    <img class="inline" src="/logoV2.png" alt="Mid Twenty Logo">
-                    <span class="text-blue font-bold">Mid Twenty</span>
+                <NuxtLink to="/" class="lg:flex items-center transition duration-500 font-Nunito font-bold text-xl block lg:mt-0 text-orange hover:text-darkBlue mr-4">
+                    <img class="inline" src="/logo.png" alt="Mid-Twenty Logo">
+                    <span class="text-blue font-bold pl-2">Mid-Twenty</span>
                 </NuxtLink>
             </div>
         </div>
