@@ -25,7 +25,7 @@ export default {
 <style>
 .landing-text {
     margin-bottom: -300px;
-    z-index: 999;
+    z-index: 20;
 }
 
 /* @media (max-width: 1880px) { */

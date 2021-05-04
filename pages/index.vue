@@ -11,7 +11,7 @@
 
         <!-- Contact Section -->
 
-        <section id="contact" class="relative grid grid-flow-row grid-rows-1 auto-rows-min md:px-20 px-4 py-24 bg-blue">
+        <!-- <section id="contact" class="relative grid grid-flow-row grid-rows-1 auto-rows-min md:px-20 px-4 py-24 bg-blue">
             <div class="row-start-1 grid grid-flow-row auto-rows-min grid-cols-8">
                 <h2 class="lg:col-span-3 col-span-full text-white font-OpenSans text-3xl font-bold">Want to work together? <br> Let us know how we can help!</h2>
                 <span class="row-start-2 md:col-span-3 col-span-full bg-orange block h-1 my-4"></span>
@@ -21,8 +21,10 @@
             </div>
             <p class="absolute bottom-0 left-0 text-white font-Nunito p-3 z-10">	&#169; Mid-Twenty LLC 2020</p>
             <img class="absolute md:block bottom-0 right-0" src="/morecircles.png" alt="Bottom Circles">
-        </section>
-        <!-- <SectionsLandingContact /> -->
+        </section> -->
+        <SectionsLandingContact />
+        <ContactModal />
+        <SectionsMyFooter />
     </div>
 </template>
 
@@ -34,6 +36,7 @@ import Component from 'vue-class-component';
 export default class index extends Vue {
     data() {
         return {
+            openModal: false,
         }
     }
 }

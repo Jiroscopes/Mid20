@@ -43,6 +43,8 @@ module.exports = {
     variants: {
         height: ['hover'],
         width: ['hover'],
+        // fontSize: ['hover'],
+        scale: ['active', 'group-hover', 'hover'],
         backgroundImage: ({ before }) => before(['active']),
     },
    plugins: [],
