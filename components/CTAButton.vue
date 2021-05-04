@@ -20,7 +20,6 @@ const CTAButtonProps = Vue.extend({
 @Component
 export default class CTAButton extends CTAButtonProps {
     emitModalClick() {
-        console.log('Clicked...')
         EventBus.$emit('modal-open');
     }
 }

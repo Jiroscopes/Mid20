@@ -87,6 +87,7 @@ export default class ModalContactForm extends Vue {
         }).then(async res => {
             if (res.status == 200) {
                 this.success = true;
+                this.showLoader = false;
             }
         })
     }

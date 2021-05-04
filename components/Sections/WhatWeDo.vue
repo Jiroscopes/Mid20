@@ -46,7 +46,7 @@ export default class WhatWeDo extends Vue {
     let serviceBoxes = document.querySelectorAll('.wwd-shadow');
 
     serviceBoxes.forEach(el => {
-        console.log(el.classList.remove('wwd-shadow'));
+        el.classList.remove('wwd-shadow');
     });
 
     let elem = document.getElementById(id);
