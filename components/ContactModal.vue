@@ -1,8 +1,8 @@
 <template>
-  <div v-if="showModal" class="h-screen w-screen fixed top-0 left-0 z-50 bg-white grid grid-cols-5">
+  <div v-if="showModal" class="overflow-scroll h-screen w-screen fixed top-0 left-0 z-50 bg-white grid grid-cols-5">
     <div class="md:col-span-3 col-span-full flex">
       <div @click="closeModal" class="hover-text text-darkBlue pl-4 pt-4 top-0 left-0 absolute font-Nunito text-xl flex items-center cursor-pointer"><span class="font-bold text-3xl px-2">X</span> Close</div>
-      <div class="flex flex-col justify-center w-full">
+      <div class="flex flex-col justify-center w-full mt-24">
         <div class="w-1/2 container-width self-center">
           <h2 class="text-blue font-OpenSans font-bold text-3xl md:text-5xl">
             Contact Us
