@@ -38,7 +38,13 @@ export default {
     id: 'UA-183041521-1'
   },
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [],
+  modules: [
+    '@nuxtjs/sitemap'
+  ],
+  sitemap: {
+    hostname: 'https://midtwenty.com',
+    gzip: true,
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
