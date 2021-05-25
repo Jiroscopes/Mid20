@@ -22,7 +22,7 @@
                 <ServiceBox image="/web_dev.png" title="Web Development" text="Build your dream website with completely custom experiences for your business. We can build your online presense to suit your business’s needs, no templates." />
             </div>
             <div @mouseover="triggerShadow('software-development')" id="software-development" class="overflow-hidden col-span-10 md:col-span-5 xl:col-span-3 py-8 lg:py-0 max-h-80 transition-all duration-200 ease-in rounded-3xl">
-                <ServiceBox image="/cube.png" title="Software Development" text="From automation, apps,  data analysis, and software integration we can develop it all. We can create any tools your buisness needs to track metrics or automate tasks to make your business run smoother and grow faster." />
+                <ServiceBox image="/cube.png" title="Software Development" text="From automation, apps,  data analysis, and software integration we can develop it all. We can create any tools your business needs to track metrics or automate tasks to make your business run smoother and grow faster." />
             </div>
         </div>
     </div>
